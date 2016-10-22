@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="{% block meta_keywords %}{% endblock %}">
+<meta name="description" content="{% block meta_description %}{% endblock %}">
+<title>OpsClick</title>
+<link rel="shortcut icon" href="{% static "img/Fav_opsclick.ico" %}">
+
+{% ifinstalled mezzanine.blog %}
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{% url "blog_post_feed" "rss" %}">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="{% url "blog_post_feed" "atom" %}">
+{% endifinstalled %}
+
+{% compress css %}
+<link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+<link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
+<link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}">
+{% if LANGUAGE_BIDI %}
+<link rel="stylesheet" href="{% static "css/bootstrap-rtl.css" %}">
+{% endif %}
+{% ifinstalled cartridge.shop %}
+<link rel="stylesheet" href="{% static "css/cartridge.css" %}">
+{% if LANGUAGE_BIDI %}
+<link rel="stylesheet" href="{% static "css/cartridge.rtl.css" %}">
+{% endif %}
+{% endifinstalled %}
+{% block extra_css %}{% endblock %}
+{% endcompress %}
+<link rel="stylesheet" href="{% static "css/styles.css" %}">
+
+{% compress js %}
+<script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
+<script src="{% static "js/bootstrap.js" %}"></script>
+<script src="{% static "js/bootstrap-extras.js" %}"></script>
+{% block extra_js %}{% endblock %}
+{% endcompress %}
+
+<!--[if lt IE 9]>
+<script src="{% static "js/html5shiv.js" %}"></script>
+<script src="{% static "js/respond.min.js" %}"></script>
+<![endif]-->
+
+{% block extra_head %}{% endblock %}
+</head>
+
+<body id="{% block body_id %}body{% endblock %}">
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">{% trans "Toggle Navigation" %}</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    {% block navbar_title %}
+    {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/"><img src="/static/img/logo.png"></a>{% endif %}
+    {% endblock%}
+</div>
+<div class="navbar-collapse collapse">
+    {% block navbar_dropdown_menu %}{% page_menu "pages/menus/dropdown.html" %}{% endblock%}
+
+    <ul class="nav navbar-nav navbar-right">    
+        <li><a href class="navbar-right">Call: (800) XXX-XXXX</a></li>
+        {% if request.user.is_authenticated %}
+        <li class="dropdown" id="#"><a href="/" class="dropdown-toggle disabled" data-toggle="dropdown">
+            {{ request.user.email }}
+            <b class="caret"></b></a><ul class="dropdown-menu"><li class="
+               " id="#"><a href="/accounts/logout">Sign Out</a></li></ul></li>        
+        {% else %}
+        <li><a href='/accounts/signup' class="navbar-right">Sign Up</a></li>
+        {% endif %}
+        <li><a href class="navbar-right">Follow Us</a></li>
+        <li><a href='/learn-more' class="navbar-right">Learn More</a></li>
+    </ul>
+    {% block navbar_search_form %}
+    {% endblock %}
+</div>
+</div>
+</div>
+
+{% block index_main %}
+{% endblock %}
+
+<div class="container" style="padding-top: 20px;">
+<div class="row">
+
+<div class="col-md-12 middle">
+    {% block main %}{% endblock %}
+</div>
+
+</div>
+</div>
+
+<footer class="footer-area">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="footer-left-column col-md-6">
+                <a href="http://localhost/wordpress/product-launch/"><img alt="ops click" src="/static/img/logo.png" style="height: 33px; width: 170px; "></a>
+                {% page_menu "pages/menus/footer.html" %}
+            </div>
+            <div class="footer-right-column col-md-offset-2 col-md-4">
+                <nav class="social-links">
+                    <span>follow us</span>
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/pages/OpsClick/1465830743729275" class="fb-btn"></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/ops_click" class="twit-btn"></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/company/opsclick" class="linkedin-btn"></a>
+                        </li>
+                        <li>
+                            <a href="mailto:sales@opsclick.com" class="email-btn"></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="ownership">
+                    <span>powered by:</span>
+                    <a href="#"><img alt="big platform" src="/static/img/powered.png" style="height: 16px; width: 106px; "></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% block footer_js %}
+{% include "includes/footer_scripts.html" %}
+{% endblock %}
+
+</body>
+</html>

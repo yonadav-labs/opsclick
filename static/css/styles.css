@@ -1,0 +1,150 @@
+body {
+    line-height: 30px;
+}
+
+.navbar {
+    min-height: 60px;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.v12bm {
+    height: auto;
+    width: 100%;
+    /*opacity: 0.9;*/
+}
+
+.v12tm {
+    font-size: 56px;
+    position: absolute;
+    top: 250px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    background-color: grey;
+}
+
+.about-opsclick-video iframe {
+    position: relative;
+    height: 223px;
+}
+
+.row {
+    margin: 0;
+}
+
+.sol_list ul li {
+    background: transparent url("/static/img/bullet.png") no-repeat scroll 0 7px;
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+.sol_list li div {
+    font-size: 18px;
+    font-family: 'proxima_regular';
+    padding-left: 30px;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.social-links {
+    padding-bottom: 60px;
+}
+.social-links span{
+    padding-right: 12px;
+}
+.social-links ul li a {
+    background: transparent url("/static/img/social-sprite.png") no-repeat scroll 0 0;
+    border: 0 none !important;
+    padding: 0 !important;
+    float: left;
+    margin-right:20px;
+}
+.social-links ul li a.fb-btn{
+    height: 23px;
+    width: 12px;
+}
+.social-links ul li a.twit-btn{
+    background-position: -57px -3px;
+    height: 23px;
+    width: 25px;
+}
+.social-links ul li a.linkedin-btn{
+    background-position: -120px 0;
+    height: 24px;
+    width: 27px;
+}
+.social-links ul li a.email-btn{
+    background-position: -181px 0;
+    height: 25px;
+    width: 24px;
+}
+
+.footer-area ul {
+    list-style: none;
+ }
+
+.footer-right-column span {
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    float: left;
+}
+
+.nav-footer {
+    padding-top: 29px;
+    margin: 0;
+}
+
+.nav-footer > ul {
+	padding-left: 0;
+    display: inline-block;
+    width: 156px;
+    margin-left: 0;
+    vertical-align: top;
+}
+
+.nav-footer ul li {
+    display: inline-block;
+}
+
+.project-content .project-info h4, .gform_wrapper label, .gform_wrapper .gfield_description, .footer-area ul, #slidingbar-area ul, .fusion-tabs-widget .tab-holder .news-list li .post-holder a, .fusion-tabs-widget .tab-holder .news-list li .post-holder .meta {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.nav-footer ul li a {
+    border: 0 none !important;
+    color: white;
+    font-size: 18px;
+    margin-right: 38px;
+    padding: 0 !important;
+    text-transform: capitalize;
+}
+
+.ownership a {
+    float: left;
+    padding: 0 0 0 15px;
+}
+
+.nav-pills {
+    display: inline-block;
+}

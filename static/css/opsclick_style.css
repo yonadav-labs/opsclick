@@ -1,0 +1,1335 @@
+body,.sidebar .slide-excerpt h2, .footer-area .slide-excerpt h2,#slidingbar-area .slide-excerpt h2,.post-content blockquote, .review blockquote q{
+  line-height:30px;
+}
+/*
+Theme Name: Avada Child
+Description: Child theme for the Avada
+Author: Your name here
+Template: Avada
+*/
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('fonts/proxima_nova_light-webfont.eot');
+    src: url('fonts/proxima_nova_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proxima_nova_light-webfont.woff2') format('woff2'),
+         url('fonts/proxima_nova_light-webfont.woff') format('woff'),
+         url('fonts/proxima_nova_light-webfont.ttf') format('truetype'),
+         url('fonts/proxima_nova_light-webfont.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_regular';
+    src: url('fonts/ProximaNova-Regular.eot');
+    src: url('fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-Regular.woff') format('woff'),
+         url('fonts/ProximaNova-Regular.ttf') format('truetype'),
+         url('fonts/ProximaNova-Regular.svg#proxima_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNova-Semibold';
+    src: url('fonts/ProximaNova-Semibold.eot');
+    src: url('fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova-Semibold.woff2') format('woff2'),
+         url('fonts/ProximaNova-Semibold.woff') format('woff'),
+         url('fonts/ProximaNova-Semibold.ttf') format('truetype'),
+         url('fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('/wp-content/uploads/2015/09/PROXIMANOVA-BOLD-webfont.eot?#iefix') format('embedded-opentype'),  
+	   url('/wp-content/uploads/2015/09/PROXIMANOVA-BOLD-webfont.woff') format('woff'), 
+	   url('/wp-content/uploads/2015/09/PROXIMANOVA-BOLD-webfont.ttf')  format('truetype'), 
+	   url('/wp-content/uploads/2015/09/PROXIMANOVA-BOLD-webfont.svg#ProximaNova-Bold') format('svg');
+	   font-weight: normal;
+	   font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova-Extrabld';
+  src: url('/wp-content/uploads/2015/09/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),  
+	   url('/wp-content/uploads/2015/09/ProximaNova-Extrabld.woff') format('woff'), 
+	   url('/wp-content/uploads/2015/09/ProximaNova-Extrabld.ttf')  format('truetype'), 
+	   url('/wp-content/uploads/2015/09/ProximaNova-Extrabld.svg#ProximaNova-Extrabld') format('svg');
+	   font-weight: normal;
+	   font-style: normal;
+}
+
+
+body, #nav ul li ul li a, #sticky-nav ul li ul li a, #wrapper .fusion-megamenu-wrapper .fusion-megamenu-widgets-container, .more, .avada-container h3, .meta .date, .review blockquote q, .review blockquote div strong, .image .image-extras .image-extras-content h4, .image .image-extras .image-extras-content h4 a, .project-content .project-info h4, .post-content blockquote, .button-default, .button-large, .button-small, .button-medium, .button-xlarge, .button.large, .button.small, .button.medium, .button.xlarge, .ei-title h3, .cart-contents, .comment-form input[type="submit"], .wpcf7-form input[type="submit"], .gform_wrapper .gform_button, .woocommerce-success-message .button, .woocommerce .single_add_to_cart_button, .woocommerce button.button, .woocommerce .shipping-calculator-form .button, .woocommerce form.checkout #place_order, .woocommerce .checkout_coupon .button, .woocommerce .login .button, .woocommerce .register .button, .page-title h3, .blog-shortcode h3.timeline-title, #reviews #comments > h2, .image .image-extras .image-extras-content h3, .image .image-extras .image-extras-content h2, .image .image-extras .image-extras-content a, .image .image-extras .image-extras-content .cats, .image .image-extras .image-extras-content .cats a, .image .image-extras .image-extras-content .price, #wrapper #nav ul li ul li > a, #wrapper #sticky-nav ul li ul li > a, #bbp_user_edit_submit, .ticket-selector-submit-btn[type=submit], .gform_page_footer input[type=button] {
+  font-family: 'proxima_novalight' !important;
+}
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+	font-family: 'proxima_novalight' !important;
+}
+.ls-wp-container{
+	margin-bottom:0 !important;
+	
+}
+.ls-carousel .ls-playvideo, .ls-carousel .ls-nav-sides, .ls-carousel .ls-bottom-slidebuttons a, .ls-carousel .ls-nav-prev, .ls-carousel .ls-nav-next, .ls-carousel .ls-nav-start, .ls-carousel .ls-nav-stop, .ls-carousel .ls-fullscreen, .ls-carousel .ls-loading-container {
+  background-image: url(images/myskin.png);
+}
+
+nav#nav, nav#sticky-nav{
+	float:left;
+	padding-left:100px;
+}
+.wpc-wrp {
+	margin: 0 auto;
+	max-width: 1230px;
+	padding-left: 14%;
+	margin-top: 40px;
+}
+.wpc-wrp > div {
+  float: left;
+  width: 32.3333% !important;
+  margin-right: 2%;
+}
+.wpc-wrp > div.last {
+	margin:0;
+	width: auto !important;
+}
+.wpcf7-form-control-wrap input{
+	border: 1px solid #cfcfcf !important;
+	padding: 10px 20px !important;
+	font-family:'proxima_novalight';
+	font-size: 22px !important;
+	background-color: #fff !important;
+	float: left !important;
+	width: 100%;
+	border-radius:3px !important;
+}
+.wpcf7-form input[type="submit"], .wpcf7-submit{
+	background-color:#8fb53e !important;
+	padding:12px 37px !important;
+}
+div.wpcf7{
+	position:relative;
+}
+div.wpcf7-response-output { 
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 75px;
+  width: 50%;
+  margin: 0 auto;
+  
+  text-align: center;
+}
+.wpcf7-validation-errors{
+	display:none !important;
+}
+.fusion-checklist .fusion-li-item {
+  margin-bottom: 29px;
+}
+.fusion-checklist .size-small {
+  font-size: 18px !important;
+  font-family: 'proxima_regular';
+}
+.reg-wrp{
+	float: right;
+	padding-top: 36px;	
+}
+.sticky-reg-wrp{
+	padding-top: 17px;
+}
+.sticky-reg-wrp .btn-signup{
+	padding: 13px 22px;
+}
+.btn-signup{
+	background-color:#0484b5;
+	padding:15px 25px;
+	color:#fff;
+	font-size:16px;
+	border-radius:5px;
+}
+.btn-signup:hover{
+	color:#fff;
+}
+.link-login{
+	color:#494949;	
+	font-size:16px;
+	margin-right:30px;
+}
+.link-login:hover{
+	color:#494949;
+}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#categories-3 ul{
+    padding:0;
+}
+/* ==== Sections ==== */
+
+.steps-section {
+  padding-bottom: 300px !important;
+  clear: left;
+}
+.sol_section{
+	float: left;
+	width: 100%;
+	padding-bottom: 75px;
+}
+.sol_container {
+    margin: 0 auto;
+    max-width: 1300px;
+    position: relative;
+}
+.sol_section .left-section{
+	float: left;
+	width: 475px;
+	position: relative;
+}
+.sol_section .left-section .sol_frame{
+	background-image: url("/wp-content/uploads/2015/06/sol.png");
+    height: 728px;
+    position: absolute;
+    width: 1103px;
+}
+.sol_section .right-section{
+  	  float: left;
+	  width: 490px;
+	  position: relative;
+}
+.sol_section .right-section img{
+	position: absolute;
+	width: 1128px;
+	max-width: none;
+}
+.portal-section{
+	text-align:center;
+	color:#fff;
+}
+
+
+/* Solution section */
+.sol_list{
+	 padding-top: 105px;
+}
+.sol_list h2{
+	font-family: 'ProximaNova-Semibold' !important;
+	font-size: 36px !important;
+	color: #494949 !important;
+	padding-bottom: 20px;
+}
+.sol_list ul{
+	padding-left:0;
+}
+.sol_list ul li{
+    background: transparent url("/static/img/bullet.png") no-repeat scroll 0 7px;
+	list-style-type:none;
+	margin-bottom: 25px;
+}
+.sol_list ul li .fusion-li-icon {
+	float:left;
+	padding-top: 6px;
+}
+.fusion-checklist .size-small .fusion-li-item-content {
+  display: block;
+  margin-left: 30px;
+}
+.fusion-checklist .fusion-li-icon {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.sol_list li div{
+	font-size: 18px; 
+	font-family: 'proxima_regular';
+	padding-left: 30px;
+}
+
+.mob-nav{
+	display:none !important;
+}
+h2.list-head{
+	font-family: 'ProximaNova-Semibold' !important;
+	font-size:36px !important;
+	color:#494949 !important;
+}
+/*Custom styles for footer section
+-----------------------------------------------------------------------------*/
+.footer-nav {
+    padding-top: 38px;
+}
+.footer-nav ul li {
+    display: inline-block;
+}
+.footer-nav ul li a {
+    border: 0 none !important;
+    color: #494949;
+    font-size: 18px;
+    margin-right: 38px;
+    padding: 0 !important;
+    text-transform: capitalize;
+}
+.footer-nav ul li a:hover{color: #494949 !important;}
+.footer-left-column {
+	 float: left;
+}
+.footer-right-column {
+    width: 318px;
+    float: right;
+}
+.footer-right-column span{
+    color: #494949;
+    font-size: 18px;
+    text-transform: capitalize;
+    float: left;
+}
+.social-links {
+    padding-bottom: 65px;
+}
+.social-links span{
+    padding-right: 32px;
+}
+.social-links ul li a {
+    background: transparent url("/wp-content/uploads/2015/06/social-sprite.png")
+    no-repeat scroll 0 0;
+    border: 0 none !important;
+    padding: 0 !important;
+    float: left;
+    margin-right:28px;
+}
+.social-links ul li a.fb-btn{
+    height: 23px;
+    width: 12px;
+}
+.social-links ul li a.twit-btn{
+    background-position: -57px -3px;
+    height: 23px;
+    width: 25px;
+}
+.social-links ul li a.linkedin-btn{
+    background-position: -120px 0;
+    height: 24px;
+    width: 27px;
+}
+.social-links ul li a.email-btn{
+    background-position: -181px 0;
+    height: 25px;
+    width: 24px;
+}
+.ownership {
+    float: right;
+    padding-right: 42px;
+}
+.ownership a {
+    float: left;
+    padding: 5px 0 0 15px;
+}
+.footer-area {
+    background-color: #fff !important;
+    border: 0 none;
+}
+.ls-vpcontainer img{
+	border-radius:10px !important;
+}
+
+/*Custom styles for footer section
+-----------------------------------------------------------------------------*/
+
+/*Custom styles for live webinar section
+-----------------------------------------------------------------------------*/
+.modal-body .sas-form-inside {
+    margin: 0;
+    max-width: none;
+    padding: 0;
+}
+.modal-body .sas-form-field {
+    font-size: 16px !important;
+    padding: 12px 20px !important;
+}
+.sas-form-field{
+  border: 1px solid #d2d2d2;
+  width: 28% !important;
+  font-family: 'proxima_novalight';
+  font-size: 18px !important;
+  color: #747474 !important;
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 11px 20px !important;
+  float: left;
+  margin-right: 1% !important;
+  border-radius:4px !important;
+}
+.sas-form-field-submit{
+  background-color: #8fb53e !important;
+  padding: 11px 37px !important;
+  border: 0 !important;
+  color: #ffffff;
+  margin:0 !important;
+  border-radius: 3px !important;
+  cursor:pointer !important;
+}
+.sas-form-inside{
+  padding-left: 20%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.sas-form-title,.sas-form-before,.sas-form-after{
+    display:none;
+}
+.sas-form-control, .sas-form-subscribed {
+  margin: 10px 0;
+  text-align: center;
+}
+.modal-body > p{
+    margin:0;
+}
+.mc_embed_signup form p{
+    display:none;
+}
+.mc_embed_signup h2{
+    display:none;
+}
+
+/* 
+Webinar
+*/
+.signup-header{
+/*	background-color:#3f3f3f;*/
+	height:73px;
+}
+
+.head-wrp{
+	margin:0 auto;
+	max-width:870px;
+	padding:21px 40px;
+}
+
+.logo{
+	float:left;
+}
+.social{
+	float:right;
+	padding-top: 3px;
+}
+.social a {
+    margin: 0 10px;
+}
+.intro{
+	float: left;
+    width: 100%;
+	background: transparent url("/wp-content/uploads/2015/09/clouds.jpg") no-repeat scroll center center;
+}
+.intro-wrp {
+    height: 396px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 300px;
+}
+.intro-wrp h1 {
+    color: #ed562b !important;
+    font-family: "ProximaNova-Extrabld" !important;
+    font-size: 36px !important;
+    font-weight: normal;
+    margin:0 !important;
+}
+.intro-wrp h2 {
+    color: #848484 !important;
+    font-family: "proxima_novalight" !important;
+    font-size: 20px !important;
+    text-transform: uppercase;
+    
+}
+.screen {
+    background: transparent url("/wp-content/uploads/2015/09/screen.png") no-repeat scroll center bottom;
+	box-sizing: border-box;
+    height: 429px;
+	padding-top: 72px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.opt-in{
+     background-color:#e2e2de;
+     float: left;
+     width: 100%;
+     padding: 80px 0 70px;
+}
+.opt-in-wrp{
+    max-width:385px;
+    margin:0 auto;
+}
+.opt-in h1 {
+    color: #1885b4 !important;
+    font-size: 30px !important;
+    font-weight: normal;
+    font-family: 'ProximaNova-Bold' !important;
+    margin: 0 !important;
+    line-height: 30px !important;
+    text-align: center;
+    padding-bottom:31px;
+}
+.opt-in-wrp .af-textWrap{
+    position:relative;
+}
+.opt-in-wrp .af-textWrap input[type="text"], .opt-in-wrp .af-textWrap input[type="email"]{
+    margin: 0 0 21px;
+    box-shadow: none !important;
+    padding: 12px 0 12px 52px;
+    color: #9b9a9a;
+    font-family: 'ProximaNova-Bold' !important;
+    font-size: 18px;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid #dbdcde;
+}
+.opt-in-wrp .af-textWrap .user-ico{
+    background: transparent url("/wp-content/uploads/2015/09/profile.png") no-repeat scroll -5px -3px;
+    width: 15px;
+    height: 17px;
+    display: block;
+    position: absolute;
+    left: 23px;
+    top: 14px;
+}
+.opt-in-wrp .af-textWrap .email-ico{
+    background: transparent url("/wp-content/uploads/2015/09/profile.png") no-repeat scroll -2px -79px;
+    width: 20px;
+    height: 13px;
+    display: block;
+    position: absolute;
+    left: 19px;
+    top: 17px;
+}
+.buttonContainer{
+    text-align: center;
+}
+.webinar-box-grey{
+	background-color:#edede8;
+	color:#6f6f6f;
+	float: left;
+    width: 100%;
+}
+.webinar-box-wrp {
+    margin: 0 auto;
+    max-width: 460px;
+	padding: 68px 0 78px;
+}
+.webinar-box-grey h1 {
+    color: #1885b4 !important;
+    font-size: 24px !important;
+    font-weight: normal;
+	font-family:'ProximaNova-Bold' !important;
+	margin: 0 !important;
+    line-height: 30px !important;
+}
+.webinar-box-grey .box-content p{
+	color: #6f6f6f;
+    font-family: "proxima_regular";
+    font-size: 18px;
+    line-height: 31px;
+}
+.webinar-box-grey .counter{
+	background-color: #f6f6f4;
+    border: 1px solid #c6c6c6;
+    color: #c6c6c6;
+    border-radius: 100px;
+    float: left;
+    font-family: "ProximaNova-Extrabld";
+    font-size: 31px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+}
+.box-header{
+	float: left;
+    padding-left: 25px;
+    padding-bottom: 40px;
+}
+.box-header p{
+	font:16px 'ProximaNova-Bold';	
+	    padding: 5px 0;
+}
+.box-content {
+    float: left;
+    padding-left: 80px;
+}
+
+.webinar-box-grey .time{
+	float:right;
+	padding-left:27px;
+	margin-top: 3px;
+	background: transparent url("/wp-content/uploads/2015/09/clock2.png") no-repeat scroll left 1px;
+}
+
+
+.webinar-box-blue {
+	background-color:#1384b4;
+    float: left;
+    width: 100%;
+	color:#fff;
+}
+.webinar-box-blue .counter {
+    background-color: #89c2da;
+    border: 1px solid #89c2da;
+    border-radius: 100px;
+    float: left;
+    font-family: "ProximaNova-Extrabld";
+    font-size: 31px;
+    width: 52px;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+}
+.webinar-box-blue h1 {
+	font-size: 24px !important;
+    font-weight: normal !important;
+	font-family:'ProximaNova-Bold' !important;
+	color:#e4e4e4 !important;
+	margin: 0 !important;
+    line-height: 30px !important;
+}
+.webinar-box-blue .box-content p{
+	color:#b9d2e2;
+	font-family: "proxima_regular";
+	font-size: 18px;
+    line-height: 31px;
+}
+.webinar-box-blue .box-header{
+	padding-bottom: 40px;
+}
+.webinar-box-blue .box-header p{
+	font:16px "ProximaNova-Bold";
+	color: #fff;
+}
+
+.webinar-box-blue .time{
+	float:right;
+	padding-left:27px;
+	background: transparent url("/wp-content/uploads/2015/09/clock2.png") no-repeat scroll left -28px;
+}
+.speakers-box {
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+.speakers-wrp {
+    margin: 0 auto;
+    width: 186px;
+	padding: 100px 0 90px;
+}
+.speakers-wrp h1 {
+	color: #ed562b !important;
+    font-family: ProximaNova-Extrabld !important;
+    font-size: 36px !important;
+    font-weight: normal;
+	padding-bottom: 60px;
+	line-height: 30px !important;
+}
+.speaker {
+    float: left;
+    width: 100%;
+	padding-bottom: 30px;
+}
+
+.speakr-img {
+    height: 186px;
+    width: 100%;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.speakr-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.speaker h2 {
+    color: #505050 !important;
+    font-family: "ProximaNova-Bold" !important;
+    font-size: 24px !important;
+    font-weight: normal !important;
+    margin: 0 !important;
+}
+
+.speaker p {
+	font-family: "proxima_regular";
+    color: #1885b4;
+    font-size: 16px;
+}
+.clearfix {
+    clear: both;
+}
+.signup-footer{
+	background-color:#e6e6de;
+	font-family: "proxima_regular";
+	float: left;
+    width: 100%;
+	padding: 25px 0;
+	color:#505050;
+}
+.signup-footer p{
+	font-size:12px;
+	line-height:24px;
+	text-align:center;
+}
+.signup-footer p a{
+	color:#89c2da;
+}
+.webinar-sponsors-box {
+    background-color: #e2e2de;
+    float: left;
+    padding-bottom: 90px;
+    padding-top: 50px;
+    width: 100%;
+}
+.sponsors-wrp {
+    margin: 0 auto;
+    max-width: 728px;
+    text-align: center;
+}
+.webinar-sponsors-box h1 {
+	color: #ed562b !important;
+    font-family: ProximaNova-Extrabld !important;
+    font-size: 36px !important;
+    font-weight: normal;
+	padding-bottom: 90px;
+	clear:both;
+	line-height: 30px !important;
+	margin:0;
+}
+.sponsors-logo {
+    vertical-align: middle;
+    display: inline-block;
+    padding-right: 97px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+}
+.sponsors-logo.logo-last {
+    margin: 0;
+    padding: 0;
+}
+.download-form p {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.about-opsclick-video h2 {
+    margin: 0;
+    padding-top: 20px;
+}
+div.wpcf7-response-output {
+    width: 100% !important;
+    position: relative;
+    float: left;
+    top: 0;
+}
+.tweets-container ul{
+    padding: 0;
+    list-style-type: none;
+}
+.player-container{
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+#player{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.opsclick-guide{
+    margin: 0 auto;
+    max-height: 500px;
+    max-width: 400px;
+}
+.opsclick-guide img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.opsclick-about-section {
+    clear: left;
+    padding: 100px 0 150px !important;
+}
+.opsclick-qrg-section {
+    padding: 80px 0 !important;
+}
+.opsclick-qrg-section h1 {
+    margin: 0;
+    padding-bottom: 0 !important;
+}
+.opsclick-uni-section {
+    padding: 100px 0 !important;
+}
+.opsclick-banner {
+    position: relative;
+    transition: all ease 300ms;
+}
+.opsclick-banner-content {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+}
+.opsclick-banner-content h1 {
+    margin: 0;
+    color: #fff !important;
+    font-size: 48px !important;
+    padding-bottom: 111px;
+}
+.opsclick-banner-content h1 span {
+    color: #1484b4;
+    font-family: 'ProximaNova-Extrabld';
+}
+.opsclick-banner > img {
+    width: 100%;
+}
+.opsclick-banner-content a{
+    opacity:0.5;
+    display: inline-block;
+    transition: all ease 300ms;
+}
+
+.opsclick-banner-content a:hover{
+    opacity:1;
+    transform: scale(1.1);
+}
+.opsclick-banner-content a:active{
+    transform: scale(1);
+}
+.opsclick-banner iframe{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.opsclick-banner-content sup {
+    font-size: 14px;
+}
+/*.ops-ico {
+    background: transparent url("/wp-content/uploads/2015/10/bullet.png") no-repeat scroll 0 0;
+    display: inline-block;
+    float: left;
+    height: 16px;
+    margin-top: 7px;
+    width: 16px;
+}*/
+.puppet-btn{
+    background-color: #0484b5;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.puppet-btn:hover{
+    background-color:#016e95;
+    color: #fff;
+}
+.simplesignuppro{
+  margin: 0 !important;
+  float: left;
+  width: 50% !important;
+}
+.opsmodal .modal-header{
+    background-color: #0484b5 !important;
+    padding-left: 12px;
+}
+.opsmodal .modal-header .modal-title{
+    background: transparent url("/wp-content/uploads/2015/10/head-icon.png") no-repeat scroll left 6px;
+    color: #fff !important;
+    font-size: 22px !important;
+    background-size: 19px;
+    padding-left: 28px;
+}
+.opsmodal .modal-header .close{
+    margin-top: -6px !important;
+    font-size: 37px !important;
+}
+.opsmodal .modal-body{
+    /*background: transparent url("/wp-content/uploads/2015/10/ops_stamp.png") no-repeat scroll right bottom;
+    background-origin: content-box;*/
+}
+.opsmodal .modal-body .modal-intro {
+    padding-left: 20px;
+    font-weight: bold;
+}
+.opsmodal .modal-intro ul{
+    padding:0;
+}
+.opsmodal .modal-intro li{
+    background: transparent url("/wp-content/uploads/2015/10/bullet.png") no-repeat scroll 0 0;
+    list-style-type: none;
+    padding-left: 25px;
+    line-height: 22px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 13px;
+}
+.modal-right-section{
+    float:right;
+    width: 50%;
+}
+.opsclick-qrg-section .download-form{
+    width: 55%;
+    margin: 0 auto;
+    margin-top: -70px;
+}
+.about-opsclick-video {
+    position: relative;
+    height: 223px;
+}
+
+.about-opsclick-video iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.about-opsclick-video h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -47px;
+}
+.sidebar-download-form {
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar-download-form  p {
+    float: left;
+    margin: 0;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+/* Live Webinar Section */
+
+.live-webinar-section {
+    background: url("/wp-content/uploads/2015/06/webinars_bg1.jpg") repeat fixed left top #f6f6f6;
+    float: left;
+    width: 100%;
+    padding: 72px 0 84px;
+}
+.lws-wrapper {
+    margin: 0 auto;
+    max-width: 1032px;
+    padding: 0 20px;
+    text-align: center;
+}
+.lws-wrapper h1 {
+    color: #1885b4 !important;
+    font-family: "ProximaNova-Bold" !important;
+    font-size: 30px !important;
+    font-weight: normal;
+    line-height: 30px !important;
+    margin: 0 !important;
+    padding-bottom: 89px;
+    text-align: center;
+}
+.lw-part {
+    float: left;
+    width: 45%;
+}
+.lw-part-2{
+    float: right !important;
+}
+.lw-part span{
+    color: #000;
+    float: left;
+    font-family: proxima_regular;
+    font-size: 20px;
+    padding-bottom: 31px;
+    width: 100%;
+}
+.lw-part .video-wrap {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    float: left;
+    height: 317px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.lw-video {
+    left: 0;
+    position: absolute;
+}
+.lw-part a{
+    font-family: "ProximaNova-Bold" !important;
+    background-color: #0484b5;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    padding: 13px 49px;
+    text-transform: capitalize;
+}
+.lw-part a:hover{
+    color:#fff;
+    background-color: #016e95;
+}
+/* Live Webinar Section */
+.uni-box-title {
+  bottom: 16px;
+  text-align: center;
+  min-height: 84px;
+  position: absolute;
+  width: 100%;
+  padding: 0px 16px;
+}
+.uni-box-title a{
+  background-color: rgba(255, 255, 255, 0.78);
+  border-radius: 10px;
+  font-size: 30px;
+  display: inline-block;
+  text-transform: capitalize;
+  padding: 26px 0;
+  width: 100%;
+  color:#000 !important;
+}
+.ops-uni-boxes a {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+.ops-uni-boxes a img,.ops-uni-view-more a img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.ops-uni-view-more {
+    position: relative;
+}
+.ops-uni-view-more a.ops-viewmore-link {
+    color: #fff !important;
+    float: left;
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    text-transform: capitalize;
+    top: 45%;
+    width: 100%;
+}
+.test{
+    display:none;
+}
+.video-medium{
+    height: 350px;
+    position: relative;
+}
+.video-medium iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.video-medium h2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -60px;
+}
+.explanatory-section{
+       padding: 80px 0 !important; 
+}
+a.disabled-btn {
+    background-color: #838383;
+    pointer-events: none;
+}
+.beta_form{
+    margin-top:20px;
+    float:left;
+    width:50%;
+}
+.graduate_form .text, .teach_form .text, .beta_form .text   {
+	font-family: 'proxima_novalight';
+    font-size: 18px !important;
+    padding: 3px 0px !important;
+    width: 100% !important;
+	border: 1px solid #ccc !important;
+    box-sizing: content-box !important;
+    text-indent: 2%;
+	height: 34px;
+	border-radius: 4px;
+    margin-bottom: 3px;
+	display: inline-block;
+}
+.graduate_form .af-element, .teach_form .af-element, .beta_form .af-element{
+    margin-bottom: 10px;
+}
+.graduate_form .af-textWrap textarea, .teach_form .af-textWrap textarea, .beta_form .af-textWrap textarea{
+    border: 1px solid #ccc !important;
+    border-radius: 4px;
+    font-family: 'proxima_novalight';
+    font-size: 18px !important;
+    padding: 9px 18px !important;
+    width:100%;
+    height: 100px !important;
+}
+.graduate_form .aweber-btn, .teach_form .aweber-btn, .beta_form .aweber-btn{
+    color: #fff;
+    background: rgb(143, 181, 62) !important;
+    float: left;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    border:0 none;
+    padding: 10px 0;
+    cursor:pointer;
+}
+.opsclick-qrg-section .wpcf7-response-output{
+    color: #fff;
+}
+@media only screen and (max-width: 1366px) {
+	
+	.sol_section .left-section {
+		padding-left: 15px;
+	}
+    .opsclick-about-section .avada-row,
+    .opsclick-qrg-section .avada-row,
+    .opsclick-uni-section .avada-row {
+        padding: 0 20px;
+    }
+    .opsclick-banner-content a {
+        width: 100px;
+    }
+   
+    .explanatory-section .avada-row, 
+    .explanatory-section .avada-row, 
+    .explanatory-section .avada-row {
+        padding: 0 20px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+	.reg-wrp{
+		display:none;
+	}
+	.steps-section {
+		padding-bottom: 150px !important;
+	}
+	.mob-nav{
+		display:inline-block !important;
+	}
+	.sol_section .left-section {
+  		width: 100%;
+	}
+	.sol_section .right-section {
+		width: 100%;
+	}
+	.sol_section .right-section img {
+		position: relative;
+		max-width: 100%;
+	}
+	.sol_list {
+	  padding-right: 18px;
+	  padding-left: 18px;
+	}
+    .opsclick-banner-content {
+        top: 50px;
+    }
+    .opsclick-banner-content h1 {
+        padding-bottom: 70px;
+        font-size: 38px !important;
+    }
+    .opsclick-banner-content a {
+        width: 80px;
+    }
+    .uni-box-title a {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .about-opsclick-video {
+        height: 371px;
+        float: left;
+         width: 100%;
+             margin-bottom: 50px;
+    }
+    .video-medium{
+        height: 378px;
+        margin-bottom: 60px;
+        float: left;
+        width: 100%;
+    }
+    .video-medium h2 {
+        margin: 0;
+        padding-top: 20px;
+    }
+    .explanatory-section{
+       padding: 40px 0 !important; 
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+	.wpc-wrp{
+		padding-left:2%;
+	}
+	.wpc-wrp > div {
+	   width: 47.3333% !important;
+	}
+	.wpc-wrp > div.last{  
+	   margin-top: 20px;
+	   text-align: center;
+	}
+	div.wpcf7-response-output {
+	  top: 175px;
+	  width: 97%;
+	}
+	.sol_section .left-section{
+	  width: 100%;
+	}
+	.sol_section .right-section{
+	  width: 100%;
+	}
+	.footer-left-column {
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+	}
+	.footer-nav ul li a{
+		line-height: 40px;
+	}
+	.footer-right-column {
+		margin: 0 auto;
+		padding: 50px 0 0;
+		float:none;
+		clear: left;
+	}
+	.ownership {
+		float: none;
+		padding-left: 30px;
+		padding-right: 0;
+	}
+	#layerslider_6{
+		margin-top:20px;
+	}
+	.web-section{
+	padding-bottom:100px !important;	
+}
+.sas-form-field {
+    margin-bottom: 20px !important;
+    width: 46% !important;
+}
+.sas-form-inside {
+    margin: 0 0 0 4%;
+    max-width: none;
+    padding: 25px 0 0;
+    width: 100%;
+}
+.sas-form-submit {
+    clear: left;
+    float: left;
+}
+.opsclick-about-section .fusion-column{
+    margin: 0 0 20px 0 !important;
+    width: 100% !important;
+}
+.opsclick-qrg-section {
+    padding: 100px 0 0 !important;
+}
+.opsclick-qrg-section .fusion-column {
+    margin: 0 !important;
+    padding-bottom: 100px !important;
+    width: 100% !important;
+}
+.prob-section {
+    width: 100%;
+}
+.download-form {
+    width: 80%;
+}
+.simplesignuppro {
+    width: 100% !important;
+}
+.beta_form{
+    width:100%;
+}
+.modal-right-section {
+    float: left;
+    width: 100%;
+}
+/* Live Webinar Section */
+
+.lw-part {
+    width: 100%;
+    padding-bottom: 100px;
+}
+.lw-part-2 {
+    float: left !important;
+}
+
+/* Live Webinar Section */
+.opsclick-qrg-section .download-form {
+    width: 85%;
+}
+}
+
+@media only screen and (max-width: 640px) {
+.sas-form-inside {
+    margin: 0 0 0 15%;
+}
+.sas-form-field {
+    width: 70% !important;
+}
+.shortcode-map {
+    height: 320px !important;
+}
+.opsclick-banner-content {
+    top: 25px;
+}
+.opsclick-banner-content h1 {
+    font-size: 28px !important;
+    padding-bottom: 30px;
+}
+.opsmodal .modal-body {
+    background: none;
+}
+.download-form{
+    width: 100%;
+}
+}
+@media only screen and (max-width: 480px) {
+.opsclick-banner-content h1 {
+    display: none;
+}
+.opsclick-banner-content a {
+    margin-top: 6%;
+    width: 50px;
+}
+.wpc7custom-submit {
+width: 100% !important;
+float: middle;
+}
+
+.training-login-widget {
+border-top-style: 1px solid !important;
+}
+
+.uni-button-width {
+display:block;
+width: 100%;
+}
+
+}
