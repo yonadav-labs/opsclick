@@ -116,7 +116,7 @@ footer {
 }
 
 .nav-footer > ul {
-	padding-left: 0;
+    padding-left: 0;
     display: inline-block;
     width: 156px;
     margin-left: 0;
@@ -151,7 +151,7 @@ footer {
 }
 
 #dropdown-menu-home {
-	display: none;
+    display: none;
 }
 
 .uni-box-title {
@@ -190,10 +190,24 @@ footer {
 }
 
 .pager li > a {
-	overflow: hidden;
-	max-height: 40px;
-	max-width: 50%;
-	padding: 5px 10px;
-	text-overflow: ellipsis;
-	white-space: nowrap;
+    overflow: hidden;
+    max-height: 40px;
+    max-width: 50%;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.size-full {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    height: auto;   
+}
+
+.size-medium {
+    width: 50%;
+    display: block;
+    max-width: 50%;
+    height: auto;   
 }
