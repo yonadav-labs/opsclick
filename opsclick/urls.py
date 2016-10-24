@@ -8,6 +8,8 @@ from django.views.i18n import set_language
 from mezzanine.core.views import direct_to_template
 from mezzanine.conf import settings
 
+# import views
+
 
 admin.autodiscover()
 
@@ -39,6 +41,12 @@ urlpatterns += [
 
     url("^$", direct_to_template, {"template": "index.html"}, name="home"),
     url(r'^accounts/', include('allauth.urls')),
+    
+    url(r"^platform", direct_to_template, {"template": "platform.html"}, name="platform"),
+    url(r"^services", direct_to_template, {"template": "services.html"}, name="services"),
+    url(r"^university", direct_to_template, {"template": "university.html"}, name="university"),
+    url(r"^videos", direct_to_template, {"template": "videos.html"}, name="videos"),
+    url(r"^news", direct_to_template, {"template": "news.html"}, name="news"),
     # HOMEPAGE AS AN EDITABLE PAGE IN THE PAGE TREE
     # ---------------------------------------------
     # This pattern gives us a normal ``Page`` object, so that your
