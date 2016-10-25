@@ -9,15 +9,17 @@ body {
 .short_page {
 }
 
-@media (min-width: 768px) {
-    .navbar-nav > li > a {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
+.size-medium {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    height: auto;   
+}
 
-    .short_page {
-        height: calc(100vh - 226px);
-    }
+.size-quarter {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
 }
 
 .v12bm {
@@ -169,13 +171,6 @@ footer {
     height: auto;   
 }
 
-.size-medium {
-    width: 50%;
-    display: block;
-    max-width: 50%;
-    height: auto;   
-}
-
 ._p46 {
     background: #4080ff;
     border: 1px solid #4b7bdb;
@@ -218,4 +213,28 @@ footer {
 .logo {
     height: 33px; 
     width: 170px;
+}
+
+@media (min-width: 768px) {
+    .size-medium {
+        width: 50%;
+        display: block;
+        max-width: 50%;
+        height: auto;   
+    }
+
+    .size-quarter {
+        width: 25%;
+        max-width: 25%;
+        height: auto;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .short_page {
+        height: calc(100vh - 226px);
+    }
 }
