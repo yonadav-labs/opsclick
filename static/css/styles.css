@@ -16,7 +16,7 @@ body {
     }
 
     .short_page {
-        height: calc(100vh - 250px);
+        height: calc(100vh - 226px);
     }
 }
 
@@ -56,9 +56,9 @@ footer {
 }
 
 .sol_list li div {
-    font-size: 18px;
+/*    font-size: 18px;
     font-family: 'proxima_regular';
-    padding-left: 30px;
+*/    padding-left: 30px;
 }
 
 .aligncenter {
@@ -73,79 +73,34 @@ footer {
     width: 100%;
 }
 
-.social-links {
-    padding-bottom: 60px;
-}
-.social-links span{
-    padding-right: 12px;
-}
-.social-links ul li a {
-    background: transparent url("/static/img/social-sprite.png") no-repeat scroll 0 0;
-    border: 0 none !important;
-    padding: 0 !important;
-    float: left;
-    margin-right:20px;
-}
-.social-links ul li a.fb-btn{
-    height: 23px;
-    width: 12px;
-}
-.social-links ul li a.twit-btn{
-    background-position: -57px -3px;
-    height: 23px;
-    width: 25px;
-}
-.social-links ul li a.linkedin-btn{
-    background-position: -120px 0;
-    height: 24px;
-    width: 27px;
-}
-.social-links ul li a.email-btn{
-    background-position: -181px 0;
-    height: 25px;
-    width: 24px;
-}
-
 .footer-area ul {
     list-style: none;
  }
 
-.footer-right-column span {
+.footer-fu * {
     color: white;
-    font-size: 18px;
-    text-transform: capitalize;
-    float: left;
+    font-size: 21px;
+    /*margin-bottom: 20px;*/
 }
 
-.nav-footer {
-    padding-top: 29px;
-    margin: 0;
+.footer-fu a {
+    margin-right: 30px;
+    text-decoration: none;
 }
 
-.nav-footer > ul {
-    padding-left: 0;
+.social-links {
     display: inline-block;
-    width: 156px;
-    margin-left: 0;
-    vertical-align: top;
+    /*float: right;*/
 }
 
-.nav-footer ul li {
-    display: inline-block;
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
 }
 
 .project-content .project-info h4, .gform_wrapper label, .gform_wrapper .gfield_description, .footer-area ul, #slidingbar-area ul, .fusion-tabs-widget .tab-holder .news-list li .post-holder a, .fusion-tabs-widget .tab-holder .news-list li .post-holder .meta {
     font-size: 18px;
     line-height: 27px;
-}
-
-.nav-footer ul li a {
-    border: 0 none !important;
-    color: white;
-    font-size: 18px;
-    margin-right: 38px;
-    padding: 0 !important;
-    text-transform: capitalize;
 }
 
 .ownership a {
@@ -179,6 +134,7 @@ footer {
     padding: 26px 0;
     color: #000 !important;
     width: 100%;
+    text-decoration: none;
 }
 
 .ops-uni-view-more {
@@ -192,6 +148,7 @@ footer {
     position: absolute;
     text-align: center;
     text-transform: capitalize;
+    text-decoration: none;
     top: 45%;
     width: 100%;
 }
@@ -217,4 +174,48 @@ footer {
     display: block;
     max-width: 50%;
     height: auto;   
+}
+
+._p46 {
+    background: #4080ff;
+    border: 1px solid #4b7bdb;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.14);
+    color: #fff !important;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 10px !important;
+    margin-top: 15px !important;
+    margin-right: 5px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background: #4080ff !important;
+}
+
+.font-title {
+    font-size: 40px;
+    font-family: Freight Sans, 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
+    color: #0583b3;
+}
+
+.font-content {
+    font-size: 24px;
+    font-family: Freight Sans, 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
+}
+
+.font-icon {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Freight Sans', helvetica, arial, sans-serif !important;
+}
+
+.logo {
+    height: 33px; 
+    width: 170px;
 }

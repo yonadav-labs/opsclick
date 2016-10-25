@@ -59,24 +59,24 @@
         <span class="icon-bar"></span>
     </button>
     {% block navbar_title %}
-    {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/"><img src="/static/img/logo.png"></a>{% endif %}
+    {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/"><img class="logo" src="/static/img/logo.png"></a>{% endif %}
     {% endblock%}
 </div>
 <div class="navbar-collapse collapse">
     {% block navbar_dropdown_menu %}{% page_menu "pages/menus/dropdown.html" %}{% endblock%}
 
     <ul class="nav navbar-nav navbar-right">    
-        <li><a href class="navbar-right">Call: (800) XXX-XXXX</a></li>
+        <li><a href class="navbar-right _p46">Call: (800) XXX-XXXX</a></li>
+        <li><a href='#id_follow_us' class="navbar-right _p46">Follow Us</a></li>
+        <li><a href='/learn-more' class="navbar-right _p46">Learn More</a></li>
         {% if request.user.is_authenticated %}
-        <li class="dropdown" id="#"><a href="/" class="dropdown-toggle disabled" data-toggle="dropdown">
+        <li class="dropdown" id="#"><a href="/" class="dropdown-toggle disabled _p46" data-toggle="dropdown">
             {{ request.user.email }}
             <b class="caret"></b></a><ul class="dropdown-menu"><li class="
                " id="#"><a href="/accounts/logout">Sign Out</a></li></ul></li>        
         {% else %}
-        <li><a href='/accounts/signup' class="navbar-right">Sign Up</a></li>
+        <li><a href='/accounts/signup' class="navbar-right _p46">Sign Up</a></li>
         {% endif %}
-        <li><a href='/blog' class="navbar-right">Follow Us</a></li>
-        <li><a href='/learn-more' class="navbar-right">Learn More</a></li>
     </ul>
     {% block navbar_search_form %}
     {% endblock %}
@@ -100,36 +100,32 @@
 <footer class="footer-area">
     <div class="row">
         <div class="col-md-12">
-            <div class="footer-left-column col-md-6">
-                <a href="http://localhost/wordpress/product-launch/"><img alt="ops click" src="/static/img/logo.png" style="height: 33px; width: 170px; "></a>
-                {% page_menu "pages/menus/footer.html" %}
-            </div>
-            <div class="footer-right-column col-md-offset-2 col-md-4">
-                <nav class="social-links">
-                    <span>follow us</span>
-                    <ul>
-                        <li>
-                            <a target="_blank" href="https://www.facebook.com/pages/OpsClick/1465830743729275" class="fb-btn"></a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://twitter.com/ops_click" class="twit-btn"></a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.linkedin.com/company/opsclick" class="linkedin-btn"></a>
-                        </li>
-                        <li>
-                            <a href="mailto:sales@opsclick.com" class="email-btn"></a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="ownership">
-                    <span>powered by:</span>
-                    <a href="#"><img alt="big platform" src="/static/img/powered.png" style="height: 16px; width: 106px; "></a>
-                </div>
+            <a href="/">
+                <img alt="ops click" src="/static/img/logo.png" class="logo" style="margin-bottom: 30px;">
+            </a>
+            <div class="footer-fu">
+                <a href="/legal/">Legal</a>
+                <a href="/support-terms/">Support Terms</a>
+                <span class="social-links" id="id_follow_us">Follow Us
+                <a target="_blank" href="https://www.facebook.com/pages/OpsClick/1465830743729275" class="fb-btn">
+                    <img src="/static/img/facebook.png">
+                </a>
+                <a target="_blank" href="https://twitter.com/ops_click" class="twit-btn">
+                    <img src="/static/img/twitter.png">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/company/opsclick" class="linkedin-btn">
+                    <img src="/static/img/linkedin.png">
+                </a>
+                <a href="mailto:sales@opsclick.com" class="email-btn">
+                    <img src="/static/img/mail.png" style="height: 23px;">
+                </a>
+                </span>
             </div>
         </div>
     </div>
 </footer>
+
+
 
 {% block footer_js %}
 {% include "includes/footer_scripts.html" %}
