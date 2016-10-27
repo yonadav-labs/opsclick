@@ -255,7 +255,8 @@ INSTALLED_APPS = (
     # "mezzanine.mobile",
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',    
+    'allauth.socialaccount',  
+    'robots',  
 )
 
 # List of middleware classes to use. Order is important; in the request phase,

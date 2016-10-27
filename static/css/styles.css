@@ -202,6 +202,25 @@ footer {
 .font-content {
     font-size: 24px;
     font-family: Freight Sans, 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
+    line-height: 40px;
+}
+
+.font-title-1 {
+    font-size: 35px;
+    font-family: Freight Sans, 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
+    color: #0583b3;
+    margin-bottom: 20px;
+}
+
+.font-content-1 {
+    font-size: 20px;
+    font-family: Freight Sans, 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
+    line-height: 32px;
+}
+
+#blog_content {
+    padding-left: 12px;
+    font-size: 18px;
 }
 
 .font-icon {
@@ -213,6 +232,29 @@ footer {
 .logo {
     height: 33px; 
     width: 170px;
+}
+
+.blog_link {
+    cursor: pointer;
+    /*color: #b36005;        */
+    /*color: grey;*/
+}
+
+.blog_link.active {
+    color: blue;
+}
+
+.blog_link span {
+    color: grey;
+    margin-right: 8px;
+}
+
+.blog_link span:before {
+    content: '\e081';
+}
+
+.blog_link.active span:before {
+    content: '\e082';
 }
 
 @media (min-width: 768px) {
