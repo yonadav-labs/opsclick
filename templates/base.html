@@ -68,7 +68,6 @@
     <ul class="nav navbar-nav navbar-right">    
         <li><a href class="navbar-right _p46">Call: (800) XXX-XXXX</a></li>
         <li><a href='#id_follow_us' class="navbar-right _p46">Follow Us</a></li>
-        <li><a href='/learn-more' class="navbar-right _p46">Learn More</a></li>
         {% if request.user.is_authenticated %}
         <li class="dropdown" id="#"><a href="/" class="dropdown-toggle disabled _p46" data-toggle="dropdown">
             {{ request.user.email }}
@@ -88,18 +87,14 @@
 {% endblock %}
 
 <div class="container" style="padding-top: 20px;">
-<div class="row">
-
-<div class="col-md-12 middle">
-    {% block main %}{% endblock %}
-</div>
-
-</div>
+    {% block main %}
+    {% endblock %}
 </div>
 
 <footer class="footer-area">
     <div class="row">
-        <div class="col-md-12">
+        <div class="container">
+        <div class="col-md-12 no-padding">
             <a href="/">
                 <img alt="ops click" src="/static/img/logo.png" class="logo" style="margin-bottom: 30px;">
             </a>
@@ -120,6 +115,7 @@
                     <img src="/static/img/mail.png" style="height: 23px;">
                 </a>
                 </span>
+            </div>
             </div>
         </div>
     </div>
