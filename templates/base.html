@@ -91,37 +91,31 @@
     {% endblock %}
 </div>
 
-<footer class="footer-area">
-    <div class="row">
-        <div class="container">
-        <div class="col-md-12 no-padding">
-            <a href="/">
-                <img alt="ops click" src="/static/img/logo.png" class="logo" style="margin-bottom: 30px;">
-            </a>
-            <div class="footer-fu">
-                <a href="/legal/">Legal</a>
-                <a href="/support-terms/">Support Terms</a>
-                <span class="social-links" id="id_follow_us">Follow Us
-                <a target="_blank" href="https://www.facebook.com/pages/OpsClick/1465830743729275" class="fb-btn">
-                    <img src="/static/img/facebook.png">
-                </a>
-                <a target="_blank" href="https://twitter.com/ops_click" class="twit-btn">
-                    <img src="/static/img/twitter.png">
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/company/opsclick" class="linkedin-btn">
-                    <img src="/static/img/linkedin.png">
-                </a>
-                <a href="mailto:sales@opsclick.com" class="email-btn">
-                    <img src="/static/img/mail.png" style="height: 23px;">
-                </a>
-                </span>
-            </div>
-            </div>
+
+<div class="navbar navbar-default" role="navigation" style="margin-bottom: 0;">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/"><img class="logo" src="/static/img/logo.png"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="" id="dropdown-menu-legal"><a href="/legal/">Legal</a></li>                
+                <li class="" id="learn-more"><a href="/support-terms/">Support Terms</a></li>
+                <li class="" id="learn-more"><a href="javascript:void(0);">Follow Us</a></li>
+                <li><a target="_blank" href="https://www.facebook.com/pages/OpsClick/1465830743729275" class="fb-btn"><img src="/static/img/facebook.png" style="width:20px;"></a></li>
+                <li><a target="_blank" href="https://twitter.com/ops_click" class="twit-btn">
+                    <img src="/static/img/twitter.png" style="width:20px;">
+                </a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/company/opsclick" class="linkedin-btn">
+                    <img src="/static/img/linkedin.png" style="width:20px;">
+                </a></li>
+                <li><a href="mailto:sales@opsclick.com" class="email-btn">
+                    <img src="/static/img/mail.png" style="height: 18px;">
+                </a></li>
+            </ul>
         </div>
     </div>
-</footer>
-
-
+</div>
 
 {% block footer_js %}
 {% include "includes/footer_scripts.html" %}
@@ -133,7 +127,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-86393602-1', 'auto');
+  ga('create', 'UA-86983824-1', 'auto');
   ga('send', 'pageview');
 
 </script>

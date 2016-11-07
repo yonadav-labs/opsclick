@@ -1,5 +1,6 @@
 body {
     line-height: 30px;
+    font-size: 16px;
 }
 
 .navbar {
@@ -266,6 +267,15 @@ footer {
     padding: 0;
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: #333;
+}
+
+.dropdown-menu {
+    font-size: 16px;
+    font-family: font-family: Freight Sans, 'helvetica neue',helvetica,arial,'lucida grande',sans-serif;
+}
+
 @media (min-width: 768px) {
     .size-medium {
         width: 50%;
@@ -286,7 +296,7 @@ footer {
     }
 
     .short_page {
-        height: calc(100vh - 226px);
+        height: calc(100vh - 134px);
         padding: 0;
     }
 
