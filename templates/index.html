@@ -1,8 +1,8 @@
-{% extends "base.html" %} {% block index_main %}
-<div class="col-md-12" style="background-color:#fff;background-attachment:fixed;background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;border-color:#f6f6f6;border-bottom-width: 1px;border-top-width: 1px;border-bottom-style: solid;border-top-style: solid;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:42px;">
-    <div class="avada-row">
-        <h1 style="text-align: center; padding-bottom: 10px;" class="font-title">Provision your App or Environment in <b><i>1-Click</i></b></h1>
-        <div class="col-md-3">
+{% extends "base.html" %} {% block main %}
+<div class="row">
+    <div class="col-md-12 no-padding">
+        <h1 style="text-align: center; margin: 40px auto;" class="font-title">Provision your App or Environment in <b><i>1-Click</i></b></h1>
+        <div class="col-md-3 no-padding">
             <div class="fusion-column-wrapper"><img class=" wp-image-11053 aligncenter" src="/static/img/col_1.jpg" alt="col_1" width="200" height="275"></div>
         </div>
         <div class="col-md-3">
@@ -11,21 +11,20 @@
         <div class="col-md-3">
             <div class="fusion-column-wrapper"><img class=" wp-image-11055 aligncenter" src="/static/img/col_3.jpg" alt="col_3" width="230" height="275"></div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 no-padding">
             <div class="fusion-column-wrapper"><img class="  wp-image-11056 aligncenter" src="/static/img/col_5.jpg" alt="col_5" width="230" height="275"></div>
         </div>
-        <div class="fusion-clearfix"></div>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12" style="margin: 15px 0 0 0;">
         <div class="col-md-offset-2 col-md-2 text-center">
-            <a href="javascript:void(0);" style="text-decoration: none;">
+            <a href="/platform" style="text-decoration: none;">
                 <div><img src="/static/img/21.png" class="v31bm"></div>
                 <span class="font-icon">Platform</span></a>
         </div>
         <div class="col-md-2 text-center">
-            <a href="javascript:void(0);" style="text-decoration: none;">
+            <a href="/services" style="text-decoration: none;">
                 <div><img src="/static/img/22.png" class="v31bm"></div>
                 <span class="font-icon">Services</span></a>
         </div>
@@ -41,19 +40,9 @@
         </div>
     </div>
     <div class="clearfix"></div>
-    <div class="col-md-12" style="padding-top: 60px; padding-bottom: 20px;" id="about-us">
+    <div class="col-md-12" style="padding: 60px 0 20px 0;" id="about-us">
         <h1 style="text-align: center;" class="font-title">About OpsClick</h1>
-        <div class="row">
-        <div class="col-md-offset-4 col-md-4 fusion-layout-column fusion-column spacing-yes" style="margin-bottom: 15px;">
-            <div class="fusion-column-wrapper">
-                <div class="about-opsclick-video">
-                    <span class="play3"><p><img src="http://www.opsclick.com/wp-content/uploads/2015/10/TopBanner.jpg" width="100%" height="100%" frameborder="0" allowfullscreen="allowfullscreen" id="player_1" style="height: 223px;"></p></span>
-                    <div class="font-content" style="text-align: center;">Simplifying Automation to 1-Click<sup>TM</sup></div>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="col-md-4 fusion-layout-column fusion-column spacing-yes">
+        <div class="col-md-4 no-lpadding-sm">
             <div class="fusion-column-wrapper">
                 <div class="about-opsclick-video">
                     <span class="play3"><p><iframe src="//www.youtube.com/embed/m7YxzghRqvs?rel=0&amp;showinfo=0&amp;enablejsapi=1" width="100%" height="100%" frameborder="0" allowfullscreen="allowfullscreen" id="player_1" style="height: 223px;"></iframe></p></span>
@@ -61,7 +50,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 fusion-layout-column fusion-column spacing-yes">
+        <div class="col-md-4 hpadding-8">
             <div class="fusion-column-wrapper">
                 <div class="about-opsclick-video">
                     <span class="play3"><p><iframe src="//www.youtube.com/embed/u0jSLZS435c?rel=0&amp;showinfo=0&amp;enablejsapi=1" width="100%" height="100%" frameborder="0" allowfullscreen="allowfullscreen" id="player_2"></iframe><p></span>
@@ -69,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 fusion-layout-column fusion-column last spacing-yes">
+        <div class="col-md-4 no-rpadding-sm">
             <div class="fusion-column-wrapper">
                 <div class="about-opsclick-video">
                     <span class="play3"><p><iframe src="//www.youtube.com/embed/0bS23QoiFxg?rel=0&amp;showinfo=0&amp;enablejsapi=1" width="100%" height="100%" frameborder="0" allowfullscreen="allowfullscreen" id="player_3"></iframe></p></span>
@@ -83,16 +72,32 @@
             <h1 style="text-align: center;" class="font-title">Live Webinars</h1>
             <div class="font-content" style="text-align: center; margin-bottom:20px;">Our live webinars are packed with useful content to help you get the most out it</div>
         </div>
-        <div class="col-md-12 text-center">
-            <form class="form-inline">
+        <div class="col-md-offset-1 col-md-10 text-center" id="div_webinar_signup">
+            <form class="form-horizontal" id="webinar_signup_form" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="genre" value="webinar">
                 <div class="form-group">
-                    <input required="" value="" name="sas-form-name" type="text" placeholder="Your full name">
+                    <div class="col-sm-offset-3 col-sm-3">
+                        <input id="id_first_name" name="first_name" placeholder="First Name" type="text" class="form-control" required="">
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="id_last_name" name="last_name" placeholder="Last Name" type="text" class="form-control" required="">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <input required="" type="email" value="" name="sas-form-email" placeholder="Your email address">
+                    <div class="col-sm-offset-3 col-sm-3">
+                        <input id="id_email" name="email" placeholder="E-mail address" type="email" class="form-control" required="">
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="id_password1" name="password1" placeholder="Password" type="password" class="input-xlarge form-control" required="">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <input class="btn btn-success" type="submit" name="sas-form-submit" value="Signup">
+                    <div class="col-sm-offset-4 col-sm-4 text-center">
+                        <button type="submit" class="btn btn-success">Sign Up</button>
+                    </div>
+                </div>
+                <div class="error" id="div_error_webinar_signup">
                 </div>
             </form>
         </div>
@@ -134,15 +139,15 @@ Automation company</h1>
             </div>
         </div>
     </div>
-    <div class="col-md-12" style="margin-bottom: 20px;">
+    <div class="col-md-12 no-padding" style="margin-bottom: 20px;">
         <div class="col-md-12">
             <h1 style="text-align: center;" class="font-title">Hard Choices & Problems</h1>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 no-lpadding-sm">
             <span class="play3"><p><iframe src="//www.youtube.com/embed/Vpq7XG95Od0?rel=0&amp;showinfo=0&amp;enablejsapi=1" width="100%" height="350" frameborder="0" allowfullscreen="allowfullscreen" id="player_4"></iframe></p></span>
             <div class="font-content" style="text-align: center;">Hard Choices</div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 no-rpadding-sm">
             <span class="play3"><p><iframe src="//www.youtube.com/embed/IIx0zD8zczo?rel=0&amp;showinfo=0&amp;enablejsapi=1" width="100%" height="350" frameborder="0" allowfullscreen="allowfullscreen" id="player_5"></iframe></p></span>
             <div class="font-content" style="text-align: center;">The Problem</div>
         </div>
@@ -174,18 +179,23 @@ Automation company</h1>
             </div>
         </div>
         <div class="col-md-6">
-            <img src="/static/img/sol_3.png" alt="" class="img-responsive">
+            <span class="play3"><p style="margin-top: 90px;"><iframe src="//www.youtube.com/embed/7P9wdHklysQ?rel=0&amp;showinfo=0&amp;enablejsapi=1" width="100%" height="350" frameborder="0" allowfullscreen="allowfullscreen" id="player_7"></iframe></p></span>
+            <div class="font-content" style="text-align: center;">OpsClick Solution</div>
         </div>
     </div>
-    <div class="col-md-12" style="background-attachment:scroll;background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;border-color:#eae9e9;border-bottom-width: 0px;border-top-width: 0px;border-bottom-style: solid;border-top-style: solid;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;">
-        <h1 class="font-title" style="text-align: center;">Why VMWare and Puppet?</h1>
-        <div class="col-md-6">
+    <div class="col-md-12 no-padding" style="background-attachment:scroll;background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;border-color:#eae9e9;border-bottom-width: 0px;border-top-width: 0px;border-bottom-style: solid;border-top-style: solid;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:50px;">
+        <div class="col-md-6 no-lpadding-sm">
             <span class="play3"><p><iframe src="//www.youtube.com/embed/ueALKemOAYc?rel=0&amp;showinfo=0&amp;enablejsapi=1" width="100%" height="350" frameborder="0" allowfullscreen="allowfullscreen" id="player_6"></iframe></p></span>
             <div class="font-content" style="text-align: center;">Why VMWare and Puppet?</div>
         </div>
         <div class="col-md-6">
-            <span class="play3"><p><iframe src="//www.youtube.com/embed/7P9wdHklysQ?rel=0&amp;showinfo=0&amp;enablejsapi=1" width="100%" height="350" frameborder="0" allowfullscreen="allowfullscreen" id="player_7"></iframe></p></span>
-            <div class="font-content" style="text-align: center;">OpsClick Solution</div>
+            <h1 class="font-title" style="text-align: center; margin-bottom: 45px;">Why VMWare and Puppet?</h1>
+            <div class="col-sm-5">
+                <img src="/static/img/vmware.jpg" class="img-responsive">
+            </div>
+            <div class="col-sm-6">
+                <img src="/static/img/puppet.png" class="img-responsive">
+            </div>
         </div>
     </div>
     <div class="col-md-12" style="background-color:#fff;background-attachment:fixed;background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;border-color:#f6f6f6;border-bottom-width: 1px;border-top-width: 1px;border-bottom-style: solid;border-top-style: solid;padding-bottom:100px;padding-left:0px;padding-right:0px;padding-top:60px;" id="partners">
@@ -214,19 +224,35 @@ Automation company</h1>
         <div class="col-md-offset-2 col-md-8">
             <img src="/static/img/refrence_book_pic.png" alt="refrence_book_pic" class="img-responsive">
         </div>
-        <div class="col-md-12 text-center">
+        <div class="col-md-offset-1 col-md-10 text-center" id="div_reference_signup">
             <div class="font-content" style="text-align: center; color: #979797; margin-bottom: 24px;">Download the Quick Reference Guide to learn all about OpsClick</div>
-            <form class="form">
+            <form class="signup form-horizontal" id="reference_signup_form" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="genre" value="reference">
                 <div class="form-group">
-                    <input required="" class="aligncenter" value="" name="sas-form-name" type="text" placeholder="Name">
+                    <div class="col-sm-offset-3 col-sm-3">
+                        <input id="id_first_name" name="first_name" placeholder="First Name" type="text" class="form-control" required="">
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="id_last_name" name="last_name" placeholder="Last Name" type="text" class="form-control" required="">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <input required="" class="aligncenter" type="email" value="" name="sas-form-email" placeholder="Email">
+                    <div class="col-sm-offset-3 col-sm-3">
+                        <input id="id_email" name="email" placeholder="E-mail address" type="email" class="form-control" required="">
+                    </div>
+                    <div class="col-sm-3">
+                        <input id="id_password1" name="password1" placeholder="Password" type="password" class="input-xlarge form-control" required="">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <input class="btn btn-success" type="submit" name="sas-form-submit" value="Download">
+                    <div class="col-sm-offset-4 col-sm-4 text-center">
+                        <button type="submit" class="btn btn-success">Download</button>
+                    </div>
                 </div>
-            </form>
+                <div class="error" id="div_error_reference_signup">
+                </div>
+            </form>        
         </div>
     </div>
     <div class="col-md-12" style="background-color:#f6f4f4;background-attachment:scroll;background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;border-color:#eae9e9;border-bottom-width: 0px;border-top-width: 0px;border-bottom-style: solid;border-top-style: solid;padding-bottom:20px;padding-left:0px;padding-right:0px;padding-top:60px;" id="locations">
@@ -236,6 +262,7 @@ Automation company</h1>
     </div>
 </div>
 <script type="text/javascript" src="/static/js/fusion_map.js"></script>
+<script type="text/javascript" src="/static/js/opsclick.js"></script>
 <script type="text/javascript">
 var markers = [];
 var counter = 0;

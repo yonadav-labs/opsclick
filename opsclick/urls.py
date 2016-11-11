@@ -9,7 +9,7 @@ from mezzanine.core.views import direct_to_template
 from mezzanine.conf import settings
 
 from sitemaps import *
-
+import views
 
 admin.autodiscover()
 
@@ -46,7 +46,9 @@ urlpatterns += [
     url(r"^videos", direct_to_template, {"template": "videos.html"}, name="videos"),
     url(r"^news", direct_to_template, {"template": "news.html"}, name="news"),
     url(r"^learn-more", direct_to_template, {"template": "learn-more.html"}, name="learn-more"),
-   
+    url(r"^webinar_sign_up", views.webinar_sign_up, name="webinar_sign_up"),
+    # url(r"^reference_sign_up", views.reference_sign_up, name="reference_sign_up"),
+
     url("^", include("mezzanine.urls")),
 ]
 

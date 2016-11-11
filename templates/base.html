@@ -63,11 +63,79 @@
     {% endblock%}
 </div>
 <div class="navbar-collapse collapse">
-    {% block navbar_dropdown_menu %}{% page_menu "pages/menus/dropdown.html" %}{% endblock%}
+    {% block navbar_dropdown_menu %}
+        {#% page_menu "pages/menus/dropdown.html" %#}
+    <ul class="nav navbar-nav">
+        <li id="dropdown-menu-home"><a href="/">Home</a></li>
+        <li class="dropdown" id="#about-us"><a href="/#about-us" class="dropdown-toggle disabled" data-toggle="dropdown">
+                About Us
+                <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li class="
+                   " id="#core-philosophy"><a href="/#core-philosophy" class="disabled-link">Core Philosophy</a></li>
+                <li class="
+                   " id="#management"><a href="/#management" class="disabled-link">Management</a></li>
+                <li class="
+                   " id="#investors"><a href="/#investors" class="disabled-link">Investors</a></li>
+                <li class="
+                   " id="#locations"><a href="/#locations">Locations</a></li>
+            </ul>
+        </li>
+        <li class="dropdown
+                   " id="#partners"><a href="/#partners" class="dropdown-toggle disabled" data-toggle="dropdown">
+                Partners
+                <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li class="
+                   " id="#partner-program"><a href="/#partner-program" class="disabled-link">Partner Program</a></li>
+                <li class="
+                   " id="#apply-now"><a href="/#apply-now">Become a Partner</a></li>
+            </ul>
+        </li>
+        <li class="dropdown
+                   " id="#careers"><a href="/#careers" class="dropdown-toggle disabled" data-toggle="dropdown">
+                Careers
+                <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li class="
+                   " id="#find-jobs"><a href="/#find-jobs" class="disabled-link">Find Jobs</a></li>
+                <li class="
+                   " id="#submit-resume"><a href="/#submit-resume">Submit Resume</a></li>
+            </ul>
+        </li>
+        <li class="
+                   " id="-learn-more"><a href="/learn-more">
+                Learn</a></li>
+    </ul>
+    {% endblock%}
 
     <ul class="nav navbar-nav navbar-right">    
         <li><a href class="navbar-right _p46">Call: (800) XXX-XXXX</a></li>
-        <li><a href='#id_follow_us' class="navbar-right _p46">Follow Us</a></li>
+        <li class="dropdown">
+            <a href='#id_follow_us' class="navbar-right dropdown-toggle disabled _p46" data-toggle="dropdown">Follow Us</a>
+            <ul class="dropdown-menu">
+                <li style="float:left;margin-left: 15px;">
+                    <a target="_blank" href="https://www.facebook.com/pages/OpsClick/1465830743729275" class="fb-btn" style="padding:2px 6px;">
+                        <img src="/static/img/facebook.png" style="width:20px;">
+                    </a>
+                </li>
+                <li style="float:left;">
+                    <a target="_blank" href="https://twitter.com/ops_click" class="twit-btn" style="padding:2px 6px;">
+                        <img src="/static/img/twitter.png" style="width:20px;">
+                    </a>
+                </li>
+                <li style="float:left;">
+                    <a target="_blank" href="https://www.linkedin.com/company/opsclick" class="linkedin-btn" style="padding:2px 6px;">
+                        <img src="/static/img/linkedin.png" style="width:20px;">
+                    </a>
+                </li>
+                <li style="float:left;">
+                    <a href="mailto:sales@opsclick.com" class="email-btn" style="padding:2px 6px;">
+                        <img src="/static/img/mail.png" style="height: 18px;">
+                    </a>
+                </li>
+            </ul>
+        </li>
         {% if request.user.is_authenticated %}
         <li class="dropdown" id="#"><a href="/" class="dropdown-toggle disabled _p46" data-toggle="dropdown">
             {{ request.user.email }}
