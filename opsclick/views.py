@@ -8,6 +8,9 @@ def platform(request):
 
 
 def webinar_sign_up(request):
+    """
+    view for webinar signup and reference download
+    """
     first_name, last_name, email, genre = parse_request(request)
 
     user = OpsUser.objects.filter(email=email, genre=genre).first()
@@ -17,8 +20,14 @@ def webinar_sign_up(request):
         else:
             return HttpResponse('The email is already used!', status=405)
     else:
-        OpsUser.objects.create(first_name=first_name, last_name=last_name, genre=genre, email=email)
-        return HttpResponse('We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process. Please contact us if you do not receive it within a few minutes.', 201)
+        OpsUser.objects.create(first_name=first_name, last_name=last_name, 
+                               genre=genre, email=email)
+        
+        # send verification email
+        return HttpResponse('We have sent an e-mail to you for verification. ' + 
+                            'Follow the link provided to finalize the signup ' +
+                            'process. Please contact us if you do not receive ' +
+                            'it within a few minutes.', 201)
 
 
 def parse_request(request):

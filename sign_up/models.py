@@ -12,6 +12,7 @@ class OpsUser(models.Model):
     zipcode = models.CharField(max_length=20)
     phone = models.CharField(max_length=20)
     resume = models.FileField(null=True, blank=True)
+    verified = models.BooleanField(default=False)
 
     def __str__(self):
         return "{} {}".format(self.first_name, self.last_name)
