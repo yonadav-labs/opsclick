@@ -1,7 +1,8 @@
 $(function() {
-    $(".blog_link").click(function() {
+    $('.blog_link').unbind('click').bind('click', function (e) {
         $(this).toggleClass("active");
         var cur_class = $(this).attr('class');
+        // console.log(cur_class);
         $('.blog_link.active').removeClass('active');
         $(this).attr('class', cur_class);
         
