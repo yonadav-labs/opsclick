@@ -21,32 +21,21 @@ $(function() {
     });
 });
 
-$('#webinar_signup_form').submit(function(event) {
+function submit_opsuser(event, form, genre) {
     event.preventDefault();
+    var fd = new FormData($(form)[0]);
+    console.log(genre);
     $.ajax({
-        method: 'POST',
-        url: '/webinar_sign_up/',
-        data: $(this).serialize(),
+        url: "/webinar_sign_up/",
+        type: "POST",
+        data: fd,
+        processData: false,
+        contentType: false,
         success: function(result) {
-            $('#div_webinar_signup').html(result);
+            $('#div_signup_'+genre).html(result);
         },
         error: function(ret) {
-            $('#div_error_webinar_signup').html(ret.responseText);
+            $('#div_error_signup_'+genre).html(ret.responseText);
         }
-    });
-});
-
-$('#reference_signup_form').submit(function(event) {
-    event.preventDefault();
-    $.ajax({
-        method: 'POST',
-        url: '/webinar_sign_up/',
-        data: $(this).serialize(),
-        success: function(result) {
-            $('#div_reference_signup').html(result);
-        },
-        error: function(ret) {
-            $('#div_error_reference_signup').html(ret.responseText);
-        }
-    });
-});
+    });    
+}

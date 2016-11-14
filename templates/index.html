@@ -72,8 +72,8 @@
             <h1 style="text-align: center;" class="font-title">Live Webinars</h1>
             <div class="font-content" style="text-align: center; margin-bottom:20px;">Our live webinars are packed with useful content to help you get the most out it</div>
         </div>
-        <div class="col-md-offset-1 col-md-10 text-center" id="div_webinar_signup">
-            <form class="form-horizontal" id="webinar_signup_form" method="post">
+        <div class="col-md-offset-1 col-md-10 text-center" id="div_signup_webinar">
+            <form class="form-horizontal" id="webinar_signup_form" method="post" onsubmit="submit_opsuser(event, this, 'webinar')">
                 {% csrf_token %}
                 <input type="hidden" name="genre" value="webinar">
                 <div class="form-group">
@@ -97,7 +97,7 @@
                         <button type="submit" class="btn btn-success">Sign Up</button>
                     </div>
                 </div>
-                <div class="error" id="div_error_webinar_signup">
+                <div class="error" id="div_error_signup_webinar">
                 </div>
             </form>
         </div>
@@ -224,9 +224,9 @@ Automation company</h1>
         <div class="col-md-offset-2 col-md-8">
             <img src="/static/img/refrence_book_pic.png" alt="refrence_book_pic" class="img-responsive">
         </div>
-        <div class="col-md-offset-1 col-md-10 text-center" id="div_reference_signup">
+        <div class="col-md-offset-1 col-md-10 text-center" id="div_signup_reference">
             <div class="font-content" style="text-align: center; color: #979797; margin-bottom: 24px;">Download the Quick Reference Guide to learn all about OpsClick</div>
-            <form class="signup form-horizontal" id="reference_signup_form" method="post">
+            <form class="signup form-horizontal" method="post" onsubmit="submit_opsuser(event, this, 'reference')">
                 {% csrf_token %}
                 <input type="hidden" name="genre" value="reference">
                 <div class="form-group">
@@ -250,7 +250,7 @@ Automation company</h1>
                         <button type="submit" class="btn btn-success">Download</button>
                     </div>
                 </div>
-                <div class="error" id="div_error_reference_signup">
+                <div class="error" id="div_error_signup_reference">
                 </div>
             </form>        
         </div>
@@ -262,7 +262,6 @@ Automation company</h1>
     </div>
 </div>
 <script type="text/javascript" src="/static/js/fusion_map.js"></script>
-<script type="text/javascript" src="/static/js/opsclick.js"></script>
 <script type="text/javascript">
 var markers = [];
 var counter = 0;
