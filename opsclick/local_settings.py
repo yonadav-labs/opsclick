@@ -14,8 +14,10 @@ NEVERCACHE_KEY = ")1a&*1=lca_&e=(w5ww5d@)!&#j5r5qs#0h334)dr^ic3f$$w%"
 DATABASES = {
     "default": {
         # Ends with "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
+        # "ENGINE": "django.db.backends.sqlite3",
         "ENGINE": "django.db.backends.mysql",
         # DB name or path to database file if using sqlite3.
+        # "NAME": "dev.db",
         "NAME": "opsclickwebsite",
         # Not used with sqlite3.
         "USER": "opsclickwebuser",
