@@ -1,7 +1,7 @@
 {% extends "account/base.html" %} {% load i18n %} {% block head_title %}{% trans "Signup" %}{% endblock %} {% block main %}
 <div class="row short_page">
     <div class="col-md-offset-1 col-md-10">
-        <h2>{% trans "Sign Up" %}</h2>
+        <h2>{% trans "Schedule a demo" %}</h2>
         <p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
         <form class="signup form-horizontal" id="signup_form" method="post" action="{% url 'account_signup' %}">
             {% csrf_token %} {{ form.errors }}

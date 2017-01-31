@@ -67,7 +67,7 @@
         {#% page_menu "pages/menus/dropdown.html" %#}
     <ul class="nav navbar-nav">
         <li id="dropdown-menu-home"><a href="/">Home</a></li>
-        <li class="dropdown" id="#about-us"><a href="/#about-us" class="dropdown-toggle disabled" data-toggle="dropdown">
+<!--         <li class="dropdown" id="#about-us"><a href="/#about-us" class="dropdown-toggle disabled" data-toggle="dropdown">
                 About Us
                 <b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -91,7 +91,7 @@
                 <li class="
                    " id="#apply-now"><a href="/#apply-now" class="disabled-link">Become a Partner</a></li>
             </ul>
-        </li>
+        </li> -->
         <li class="dropdown
                    " id="#careers"><a href="/#careers" class="dropdown-toggle disabled" data-toggle="dropdown">
                 Careers
@@ -105,39 +105,47 @@
         </li>
         <li class="
                    " id="-learn-more"><a href="/learn-more">
-                Learn</a></li>
+                Learn More</a></li>
     </ul>
     {% endblock%}
 
     <ul class="nav navbar-nav navbar-right">    
-        <li><a href="javascript:void(0)" class="navbar-right _p46">Call: (202) 640-8868</a></li>
+        <li><a href='/accounts/signup' class="navbar-right _p46">Schedule a demo</a></li>
+        <li>
+            <a href="mailto:sales@opsclick.com" class="email-btn _p46" style="padding:2px 6px;">
+                <img src="/static/img/mail.png" style="width:18px;">
+            </a>
+        </li>
         <li class="dropdown">
-            <a href='#id_follow_us' class="navbar-right dropdown-toggle disabled _p46" data-toggle="dropdown">Follow Us</a>
-            <ul class="dropdown-menu" style="min-width: 120px;">
+            <a href='#id_follow_us' class="navbar-right dropdown-toggle disabled _p46" data-toggle="dropdown"><img src="/static/img/phone.png" style="width:20px;"></a>
+            <ul class="dropdown-menu" style="min-width: 138px;">
                 <li style="float:left;margin-left: 10px;">
-                    <a target="_blank" href="https://www.facebook.com/pages/opsclick/167097030415794" class="fb-btn" style="padding:2px 6px;">
-                        <img src="/static/img/facebook.png" style="width:20px;">
-                    </a>
-                </li>
-                <li style="float:left;">
-                    <a target="_blank" href="https://twitter.com/ops_click" class="twit-btn" style="padding:2px 6px;">
-                        <img src="/static/img/twitter.png" style="width:20px;">
-                    </a>
-                </li>
-                <li style="float:left;">
-                    <a target="_blank" href="https://www.linkedin.com/company/opsclick" class="linkedin-btn" style="padding:2px 6px;">
-                        <img src="/static/img/linkedin.png" style="width:20px;">
-                    </a>
+                    (202) 640-8868
                 </li>
             </ul>
         </li>
+        <li>
+            <a target="_blank" href="https://www.facebook.com/pages/opsclick/167097030415794" class="fb-btn _p46" style="padding:2px 6px;">
+                <img src="/static/img/facebook.png" style="width:20px;">
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://twitter.com/ops_click" class="twit-btn _p46" style="padding:2px 6px;">
+                <img src="/static/img/twitter.png" style="width:20px;">
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.linkedin.com/company/opsclick" class="linkedin-btn _p46" style="padding:2px 6px;">
+                <img src="/static/img/linkedin.png" style="width:20px;">
+            </a>
+        </li>
+        
         {% if request.user.is_authenticated %}
         <li class="dropdown" id="#"><a href="/" class="dropdown-toggle disabled _p46" data-toggle="dropdown">
             {{ request.user.email }}
             <b class="caret"></b></a><ul class="dropdown-menu"><li class="
                " id="#"><a href="/accounts/logout">Sign Out</a></li></ul></li>        
         {% else %}
-        <li><a href='/accounts/signup' class="navbar-right _p46">Sign Up</a></li>
         {% endif %}
     </ul>
     {% block navbar_search_form %}
@@ -162,10 +170,10 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="" id="dropdown-menu-legal"><a href="/legal/">Legal</a></li>                
+<!--                 <li class="" id="dropdown-menu-legal"><a href="/legal/">Legal</a></li>                
                 <li class="" id="learn-more"><a href="/support-terms/">Support Terms</a></li>
                 <li class="" id="learn-more"><a href="javascript:void(0);">Follow Us</a></li>
-                <li><a target="_blank" href="https://www.facebook.com/pages/opsclick/167097030415794" class="fb-btn"><img src="/static/img/facebook.png" style="width:20px;"></a></li>
+ -->                <li><a target="_blank" href="https://www.facebook.com/pages/opsclick/167097030415794" class="fb-btn"><img src="/static/img/facebook.png" style="width:20px;"></a></li>
                 <li><a target="_blank" href="https://twitter.com/ops_click" class="twit-btn">
                     <img src="/static/img/twitter.png" style="width:20px;">
                 </a></li>
