@@ -17,6 +17,7 @@ from sign_up.models import *
 genre_key_code = {
     'webinar': '@3$',
     'reference': '%7!',
+    'execsummary': '9$#',
     'resume': '6^&'
 }
 
@@ -84,6 +85,8 @@ def verify_webinar(request, key):
             return HttpResponse('You are successfully signed up!\n Thank you.')
         else:            
             path = smart_str(settings.PROJECT_ROOT+'/OpsClick_QuickReferenceGuide.pdf')
+            if key[5:8] == genre_key_code['execsummary']:
+                path = smart_str(settings.PROJECT_ROOT+'/OpsClick_ExecSummary.pdf')
             wrapper = FileWrapper( open( path, "r" ) )
             content_type = mimetypes.guess_type( path )[0]
 

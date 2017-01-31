@@ -226,7 +226,8 @@
             <div class="font-content" style="text-align: center; color: #979797; margin-bottom: 24px;">Download to learn all about OpsClick</div>
             <form class="signup form-horizontal" method="post" onsubmit="submit_opsuser(event, this, 'reference')">
                 {% csrf_token %}
-                <input type="hidden" name="genre" value="reference">
+                <input type="option" name="genre" value="reference">Download
+                <input type="option" name="genre" value="execsummary">Download
                 <div class="form-group">
                     <div class="col-sm-offset-3 col-sm-3">
                         <input id="id_first_name" name="first_name" placeholder="First Name" type="text" class="form-control" required="">
