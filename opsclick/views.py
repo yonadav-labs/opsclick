@@ -17,7 +17,7 @@ from sign_up.models import *
 genre_key_code = {
     'webinar': '@3$',
     'reference': '%7!',
-    'execsummary': '9$#',
+    'execsummary': '9$%',
     'resume': '6^&'
 }
 

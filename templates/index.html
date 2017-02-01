@@ -3,16 +3,16 @@
     <div class="col-md-12 no-padding">
         <h1 style="text-align: center; margin: 40px auto;" class="font-title">Provision your App & Environment in <b><i>1-Click</i></b></h1>
         <div class="col-md-3 no-padding">
-            <div class="fusion-column-wrapper"><img class=" wp-image-11053 aligncenter" src="/static/img/11.png" alt="col_1" width="190"></div>
+            <div class="fusion-column-wrapper"><img class=" wp-image-11053 aligncenter" src="/static/img/11.png" alt="col_1" width="150"></div>
         </div>
         <div class="col-md-3">
-            <div class="fusion-column-wrapper"><img class=" wp-image-11054 aligncenter" src="/static/img/12.png" alt="col_2" width="190"></div>
+            <div class="fusion-column-wrapper"><img class=" wp-image-11054 aligncenter" src="/static/img/12.png" alt="col_2" width="150"></div>
         </div>
         <div class="col-md-3">
-            <div class="fusion-column-wrapper"><img class=" wp-image-11055 aligncenter" src="/static/img/13.png" alt="col_3" width="190"></div>
+            <div class="fusion-column-wrapper"><img class=" wp-image-11055 aligncenter" src="/static/img/13.png" alt="col_3" width="150"></div>
         </div>
         <div class="col-md-3 no-padding">
-            <div class="fusion-column-wrapper"><img class="  wp-image-11056 aligncenter" src="/static/img/14.png" alt="col_5" width="190"></div>
+            <div class="fusion-column-wrapper"><img class="  wp-image-11056 aligncenter" src="/static/img/14.png" alt="col_5" width="150"></div>
         </div>
     </div>
 </div>
@@ -104,6 +104,14 @@
         <h1 class="font-title" style="text-align: center; color: #0583b3; margin: 0;">OpsClick is a 1-Click Automation Company</h1>
         <div class="font-content" style="text-align: center; line-height: 36px;">Helping enterprises bridge the gap between running IT and transforming IT with Automation Solutions</div>
     </div>
+<div class="col-md-offset-1 col-md-10">
+    <div class="row" style="margin: 40px;">
+        <div class="col-md-12 no-padding">
+            <img src="/static/img/differentiator.png" class="img-responsive">
+        </div>
+    </div>
+</div>
+
     <div class="col-md-12" style="background-color:#fff;background-attachment:scroll;background-image: url(/static/img/problems_bg.jpg);background-position:center top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;border-color:#dadada;border-bottom-width: 1px;border-top-width: 1px;border-bottom-style: solid;border-top-style: solid;padding: 0 0 20px 0;">
         <div class="fusion-column-wrapper" style="padding:15px;">
             <div class="sol_list col-md-7">
@@ -218,16 +226,23 @@
         </div>
     </div>
     <div class="col-md-12" style="background-attachment:scroll;background-image: url(/static/img/quick_reference_bg.jpg);background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;border-color:#eae9e9;border-bottom-width: 0px;border-top-width: 0px;border-bottom-style: solid;border-top-style: solid;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;">
-        <h1 style="text-align: center; color: #979797;" class="font-title">Quick Reference Guide</h1>
-        <div class="col-md-offset-2 col-md-8">
+        <form class="signup form-horizontal" method="post" onsubmit="submit_opsuser(event, this, 'reference')">
+        <div class="col-md-6">
+            <h1 style="text-align: center; color: #979797;" class="font-title">Quick Reference Guide</h1>
             <img src="/static/img/refrence_book_pic.png" alt="refrence_book_pic" class="img-responsive">
+            <div style="color:#979797;" class="text-center"><input type="radio" name="genre" value="reference" required=""> Choose</div>
+        </div>
+        <div class="col-md-6">
+            <h1 style="text-align: center; color: #979797;" class="font-title">OpsClick Value Proposition</h1>
+            <div class="col-md-offset-4 col-md-4" style="margin-top: 70px; padding: 0 37px;">
+                <img src="/static/img/clogo.png" alt="refrence_book_pic" class="img-responsive">
+            </div>
+            <div class="clearfix"></div>            
+            <div style="color:#979797; margin-top:45px;" class="text-center"><input type="radio" name="genre" value="execsummary" required=""> Choose</div>
         </div>
         <div class="col-md-offset-1 col-md-10 text-center" id="div_signup_reference">
             <div class="font-content" style="text-align: center; color: #979797; margin-bottom: 24px;">Download to learn all about OpsClick</div>
-            <form class="signup form-horizontal" method="post" onsubmit="submit_opsuser(event, this, 'reference')">
                 {% csrf_token %}
-                <input type="option" name="genre" value="reference">Download
-                <input type="option" name="genre" value="execsummary">Download
                 <div class="form-group">
                     <div class="col-sm-offset-3 col-sm-3">
                         <input id="id_first_name" name="first_name" placeholder="First Name" type="text" class="form-control" required="">
@@ -246,8 +261,8 @@
                 </div>
                 <div class="error" id="div_error_signup_reference">
                 </div>
-            </form>        
         </div>
+        </form>        
     </div>
     <div class="col-md-12" style="background-color:#f6f4f4;background-attachment:scroll;background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;border-color:#eae9e9;border-bottom-width: 0px;border-top-width: 0px;border-bottom-style: solid;border-top-style: solid;padding-bottom:20px;padding-left:0px;padding-right:0px;padding-top:60px;" id="locations">
         <h1 class="font-title" style="text-align: center;">Locations</h1>
